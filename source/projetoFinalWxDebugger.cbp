@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="projetoFinalWxDebugger" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/projetoFinalWxDebugger" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add directory="$(#wx)/lib/gcc_dll/mswu" />
+					<Add directory="include/view" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#wx)/lib/gcc_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxmsw31u.a" />
+					<Add directory="$(#wx)/lib/gcc_dll" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-Winvalid-pch" />
+			<Add option="-include wx_pch.h" />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DWXUSINGDLL" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add option="-DWX_PRECOMP" />
+			<Add directory="$(#wx)/include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="$(#wx)/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-mthreads" />
+		</Linker>
+		<Unit filename="include/control/controlFacade.h" />
+		<Unit filename="include/control/mensagem.h" />
+		<Unit filename="include/model/AVEF.h" />
+		<Unit filename="include/model/SMC.h" />
+		<Unit filename="include/model/capitalExterno.h" />
+		<Unit filename="include/model/capitalExternoFactory.h" />
+		<Unit filename="include/model/distribuicao.h" />
+		<Unit filename="include/model/distribuicaoFactory.h" />
+		<Unit filename="include/model/normal.h" />
+		<Unit filename="include/model/prestacao.h" />
+		<Unit filename="include/model/price.h" />
+		<Unit filename="include/model/sac.h" />
+		<Unit filename="include/model/transacao.h" />
+		<Unit filename="include/model/uniforme.h" />
+		<Unit filename="include/model/valor.h" />
+		<Unit filename="include/model/zeroFunding.h" />
+		<Unit filename="include/view/arqTexto.h" />
+		<Unit filename="include/view/arquivo.h" />
+		<Unit filename="include/view/arquivoFactory.h" />
+		<Unit filename="include/view/csv.h" />
+		<Unit filename="include/view/txt.h" />
+		<Unit filename="include/view/view.h" />
+		<Unit filename="include/view/viewFacade.h" />
+		<Unit filename="include/view/viewWx.h" />
+		<Unit filename="projetoFinalWxDebuggerApp.cpp" />
+		<Unit filename="projetoFinalWxDebuggerApp.h" />
+		<Unit filename="projetoFinalWxDebuggerMain.cpp" />
+		<Unit filename="projetoFinalWxDebuggerMain.h" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="src/control/controlFacade.cpp" />
+		<Unit filename="src/control/mensagem.cpp" />
+		<Unit filename="src/model/AVEF.cpp" />
+		<Unit filename="src/model/SMC.cpp" />
+		<Unit filename="src/model/capitalExterno.cpp" />
+		<Unit filename="src/model/capitalExternoFactory.cpp" />
+		<Unit filename="src/model/distribuicao.cpp" />
+		<Unit filename="src/model/distribuicaoFactory.cpp" />
+		<Unit filename="src/model/normal.cpp" />
+		<Unit filename="src/model/prestacao.cpp" />
+		<Unit filename="src/model/price.cpp" />
+		<Unit filename="src/model/sac.cpp" />
+		<Unit filename="src/model/transacao.cpp" />
+		<Unit filename="src/model/uniforme.cpp" />
+		<Unit filename="src/model/valor.cpp" />
+		<Unit filename="src/model/zeroFunding.cpp" />
+		<Unit filename="src/view/arqTexto.cpp" />
+		<Unit filename="src/view/arquivo.cpp" />
+		<Unit filename="src/view/arquivoFactory.cpp" />
+		<Unit filename="src/view/csv.cpp" />
+		<Unit filename="src/view/txt.cpp" />
+		<Unit filename="src/view/view.cpp" />
+		<Unit filename="src/view/viewFacade.cpp" />
+		<Unit filename="src/view/viewWx.cpp" />
+		<Unit filename="wx_pch.h" />
+		<Unit filename="wxsmith/projetoFinalWxDebuggerframe.wxs" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="projetoFinalWxDebuggerApp.cpp" main="projetoFinalWxDebuggerFrame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/projetoFinalWxDebuggerframe.wxs" src="projetoFinalWxDebuggerMain.cpp" hdr="projetoFinalWxDebuggerMain.h" fwddecl="0" i18n="1" name="projetoFinalWxDebuggerFrame" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

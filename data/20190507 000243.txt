@@ -1,0 +1,28 @@
+Valor do bem:350000
+Entrada:50000
+Aporte FGTS:50000
+Fonte cap. ext.:Hipoteca
+Valor cap. ext.:250000
+Taxa de juros cap. ext.:5
+Dist. de prob. taxa de juros cap. ext.:Normal
+Dist. de prob. taxa de juros cap. ext. P1:5
+Dist. de prob. taxa de juros cap. ext. P2:2
+Dist. de prob. taxa de juros cap. ext. P3:0
+Sistema de amortização cap. ext.:SAC
+Prazo cap. ext.:360
+Taxa de serviços cap. ext.:0.025
+Custo contratação cap. ext.:2000
+Calcular Aval. Econ.-Fin.:1
+Nome índice econ.:IPCA
+Taxa índice econ.:6.5
+Taxa oportunidade:16
+Custo evitado mensal:2100
+Periodo de análise:360
+Qntd. amostras:10000
+Valores|
+Descrição|valor unitário|dist. vu|dvu p1|dvu p2|dvu p3|qntd|dist. q|dq p1|dq p2|dq p3|
+Reforma|5000|Normal|5000|1000|0|1|Uniforme|0|1|2|
+Móveis|5000|Normal|5000|1000|0|5|Uniforme|0|1|2|
+Eletro|10000|Normal|10000|1000|0|5|Uniforme|0|1|2|
+Materiais|4000|Normal|4000|500|0|10|Uniforme|0|1|4|
+Decoraçao|5000|Normal|15000|2000|0|10|Normal|10|2|0|

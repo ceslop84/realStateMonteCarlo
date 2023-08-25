@@ -1,0 +1,163 @@
+#include "../../include/model/AVEF.h"
+
+namespace model
+{
+
+void AVEF::calcularAvef()
+{
+    //Conversào de taxa anual para mensal.
+    double p1, p2, tie, tco;
+    //Ind. economico
+    p1 = 1.0 + getTaxaIndEcon()/100.0;
+    p2 = pow(p1, 0.083333);
+    tie = p2 - 1.0;
+
+    //Custo de oportunidade.
+    p1 = 1.0 + getTaxaOport()/100.0;
+    p2 = pow(p1, 0.083333);
+    tco = p2 - 1.0;
+
+    //Cálculo do investimento inicial.
+    double inv_in = 0;
+    inv_in = getSmc()->getTransacao()->getEntrada() + getSmc()->getTransacao()->getAporteFgts() + getSmc()->getCapitalExt()->getCustoContratacao();
+
+    for (int i = 0; i<getSmc()->getValores().size(); i++){
+            inv_in += getSmc()->getValores()[i]->getValorU() * getSmc()->getValores()[i]->getValorQ();
+    }
+
+    //Calculo do fluxo de caixa.
+    double fc = 0;
+    double valorFinal = getSmc()->getTransacao()->getValorBem();
+    for (int i = 0; i<getSmc()->getCapitalExt()->getPrazo(); i++){
+        fc += (1+(tie*i))*(getCustoEvitado() - getSmc()->getCapitalExt()->getPrestacoes()[i].getAmortizacao() - getSmc()->getCapitalExt()->getPrestacoes()[i].getJuros()- getSmc()->getCapitalExt()->getPrestacoes()[i].getServicos() - (getSmc()->getTransacao()->getEntrada() * tco));
+        valorFinal = (1+(tie*i)* valorFinal;
+    }
+
+    tir = ((fc+valorFinal)-inv_in)/inv_in;
+
+}
+
+void AVEF::setTaxaIndEcon(double t)
+{
+    taxaIndEcon = t;
+}
+
+double AVEF::getTaxaIndEcon()
+{
+    return taxaIndEcon;
+}
+
+void AVEF::setNomeIndEcon(string n)
+{
+    nomeIndEcon = n;
+}
+
+string AVEF::getNomeIndEcon()
+{
+    return nomeIndEcon;
+}
+
+void AVEF::setTaxaOport(double t)
+{
+    taxaOport = t;
+}
+
+double AVEF::getTaxaOport()
+{
+    return taxaOport;
+}
+
+void AVEF::setCustoEvitado(double c)
+{
+    custoEvitado = c;
+}
+
+double AVEF::getCustoEvitado()
+{
+    return custoEvitado;
+}
+
+void AVEF::setTir(double t)
+{
+    tir = t;
+}
+
+double AVEF::getTir()
+{
+    return tir;
+}
+
+void AVEF::setPaybackSimples(double p)
+{
+    paybackSimples = p;
+}
+
+double AVEF::getPaybackSimples()
+{
+    return paybackSimples;
+}
+
+void AVEF::setPaybackDescontado(double p)
+{
+    paybackDescontado = p;
+}
+
+double AVEF::getPaybackDescontado()
+{
+    return paybackDescontado;
+}
+
+void AVEF::setVpl(double v)
+{
+    vpl = v;
+}
+
+double AVEF::getVpl()
+{
+    return vpl;
+}
+
+void AVEF::setRazaoCustoBenf(double r)
+{
+    razaoCustoBenf = r;
+}
+
+double AVEF::getRazaoCustoBenf()
+{
+    return razaoCustoBenf;
+}
+
+SMC* AVEF::getSmc()
+{
+	return AVEF::smc;
+}
+
+AVEF::AVEF()
+{
+    msg = new control::mensagem();
+    smc = new model::SMC();
+    taxaIndEcon = 0;
+	nomeIndEcon = "";
+	taxaOport = 0;
+	custoEvitado = 0;
+	tir = 0;
+	paybackSimples = 0;
+	paybackDescontado = 0;
+	vpl = 0;
+	razaoCustoBenf = 0;
+}
+
+AVEF::AVEF(model::SMC* s):AVEF()
+{
+    smc = s;
+}
+
+AVEF::AVEF(model::SMC* s, string nome, double taxai, double taxao, double custoE):AVEF(s)
+{
+}
+
+control::mensagem* AVEF::getMsg()
+{
+    return msg;
+}
+}  // namespace model

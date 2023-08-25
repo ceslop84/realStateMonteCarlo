@@ -1,0 +1,73 @@
+Valor do bem;335000
+Entrada;193947
+Aporte FGTS;141053
+Fonte cap. ext.;Não aplicável
+Valor cap. ext.;0
+Taxa de juros cap. ext.;0
+Dist. de prob. taxa de juros cap. ext.;Não aplicável
+Dist. de prob. taxa de juros cap. ext. P1;0
+Dist. de prob. taxa de juros cap. ext. P2;0
+Dist. de prob. taxa de juros cap. ext. P3;0
+Sistema de amortização cap. ext.;Não aplicável
+Prazo cap. ext.;0
+Taxa de serviços cap. ext.;0
+Custo contratação cap. ext.;0
+Calcular Aval. Econ.-Fin.;1
+Nome índice econ.;IPCA
+Taxa índice econ.;3.5
+Taxa oportunidade;6.5
+Custo evitado mensal;2100
+Periodo de análise;360
+Qntd. amostras;10000
+Valores;
+Descrição;valor unitário;dist. vu;dvu p1;dvu p2;dvu p3;qntd;dist. q;dq p1;dq p2;dq p3;
+Despesas gerais;17021.4;Uniforme;15270;16000;17021.4;1;Uniforme;1;1;1;
+Privada;466.667;Uniforme;350;400;650;1;Uniforme;1;1;1;
+Porta rolo;66.6667;Uniforme;40;80;80;1;Uniforme;1;1;1;
+Toalheiro duplo;293.333;Uniforme;200;340;340;1;Uniforme;1;1;1;
+Torneira chuveiro (2x);83.3333;Uniforme;50;100;100;1;Uniforme;1;1;1;
+Chuveiro com chuveirinho;450;Uniforme;350;500;500;1;Uniforme;1;1;1;
+Saboneteira;83.3333;Uniforme;50;100;100;1;Uniforme;1;1;1;
+Porta shampoo;200;Uniforme;100;250;250;1;Uniforme;1;1;1;
+Porta toalha rosto;43.3333;Uniforme;30;50;50;1;Uniforme;1;1;1;
+Spots (3x);86.6667;Uniforme;60;100;100;1;Uniforme;1;1;1;
+Luz;86.6667;Uniforme;60;100;100;1;Uniforme;1;1;1;
+Cuba;266.667;Uniforme;100;100;600;1;Uniforme;1;1;1;
+Pedras;166.667;Uniforme;0;0;500;1;Uniforme;1;1;1;
+Torneira;366.667;Uniforme;300;300;500;1;Uniforme;1;1;1;
+Instalação piso e rev.;533.333;Uniforme;0;0;1600;1;Uniforme;1;1;1;
+Piso;22.6667;Uniforme;0;0;68;1;Uniforme;1;1;1;
+Móvel;600;Uniforme;0;450;900;1;Uniforme;1;1;1;
+Revestimento;215.833;Uniforme;0;5;647.5;1;Uniforme;1;1;1;
+Móvel;11213.3;Uniforme;5000;8640;15000;1;Uniforme;1;1;1;
+Torneira;466.667;Uniforme;350;450;600;1;Uniforme;1;1;1;
+GRanito balcão;733.333;Uniforme;600;800;800;1;Uniforme;1;1;1;
+Granito + cuba;1066.67;Uniforme;600;1300;1300;1;Uniforme;1;1;1;
+Luz;150;Uniforme;100;150;200;1;Uniforme;1;1;1;
+Cooktop;466.667;Uniforme;0;700;700;1;Uniforme;1;1;1;
+Forno;1000;Uniforme;0;1500;1500;1;Uniforme;1;1;1;
+Coifa;910;Uniforme;730;1000;1000;1;Uniforme;1;1;1;
+Piso;150;Uniforme;0;150;195.5;1;Uniforme;1;1;1;
+Revestimento;200;Uniforme;0;200;385;1;Uniforme;1;1;1;
+Instalação piso e rev.;533.333;Uniforme;0;500;1100;1;Uniforme;1;1;1;
+Luz;83.3333;Uniforme;50;80;100;1;Uniforme;1;1;1;
+Móvel;893.333;Uniforme;0;500;1000;1;Uniforme;1;1;1;
+Tomadas;74;Uniforme;0;111;111;1;Uniforme;1;1;1;
+Interruptores;69.2667;Uniforme;0;103.9;103.9;1;Uniforme;1;1;1;
+Placa cega;20;Uniforme;0;30;30;1;Uniforme;1;1;1;
+Dijuntores;200;Uniforme;0;300;300;1;Uniforme;1;1;1;
+Fio;200;Uniforme;0;300;300;1;Uniforme;1;1;1;
+Mão de obra;466.667;Uniforme;0;700;700;1;Uniforme;1;1;1;
+Tapete;333.333;Uniforme;0;500;500;1;Uniforme;1;1;1;
+Papel de parede;520;Uniforme;0;780;780;1;Uniforme;1;1;1;
+Luzes (Sala. quartos e sacada);666.667;Uniforme;400;800;800;1;Uniforme;1;1;1;
+Porta armários quarto;2400;Uniforme;0;3600;3600;1;Uniforme;1;1;1;
+Pintura;2000;Uniforme;2000;2000;2000;1;Uniforme;1;1;1;
+Reiki sacada;2500;Uniforme;2500;2500;2500;1;Uniforme;1;1;1;
+Projeto;1200;Uniforme;0;0;3600;1;Uniforme;1;1;1;
+Supervisão execução;2134.55;Uniforme;0;0;6403.64;1;Uniforme;1;1;1;
+Tanque;-100;Uniforme;-150;-100;-50;1;Uniforme;1;1;1;
+Móvel;-75;Uniforme;-100;-75;-50;1;Uniforme;1;1;1;
+Beliche;-250;Uniforme;-300;-250;-200;1;Uniforme;1;1;1;
+Frigobar;-633.333;Uniforme;-800;-600;-500;1;Uniforme;1;1;1;
+Mesa Gávea;-833.333;Uniforme;-1000;-800;-700;1;Uniforme;1;1;1;
